@@ -16,7 +16,7 @@ let inputCount = input.count
 // --------------------
 
 puzzleOne:
-for idx1 in 1..<inputCount {
+for idx1 in 0..<inputCount {
     let value = input[idx1]
     for idx2 in idx1..<inputCount {
         if value + input[idx2] == 2020 {
@@ -32,7 +32,7 @@ for idx1 in 1..<inputCount {
 // --------------------
 
 puzzleTwo:
-for idx1 in 1..<inputCount {
+for idx1 in 0..<inputCount {
     let value1 = input[idx1]
     for idx2 in idx1..<inputCount {
         let value2 = input[idx2]
