@@ -27,6 +27,7 @@
 		4CAD5C2A2585D5E90052404C /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD5C292585D5E90052404C /* input.swift */; };
 		4CBA389A258483F70042CDDB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA3899258483F70042CDDB /* main.swift */; };
 		4CBA38AB258484160042CDDB /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA38AA258484160042CDDB /* input.swift */; };
+		4CC0AEB3258878A40023DCA6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0AEB2258878A40023DCA6 /* main.swift */; };
 		4CCE28702587283600B28CF7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE286F2587283600B28CF7 /* main.swift */; };
 		4CCE28832587285800B28CF7 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCE28822587285800B28CF7 /* input.swift */; };
 		4CD86C442582CBC70056921A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86C432582CBC70056921A /* main.swift */; };
@@ -128,6 +129,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		4CC0AEAE258878A40023DCA6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		4CCE286B2587283600B28CF7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +207,8 @@
 		4CBA3897258483F70042CDDB /* Day12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Day12; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBA3899258483F70042CDDB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4CBA38AA258484160042CDDB /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
+		4CC0AEB0258878A40023DCA6 /* Day15 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Day15; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC0AEB2258878A40023DCA6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4CCE286D2587283600B28CF7 /* Day14 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Day14; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCE286F2587283600B28CF7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4CCE28822587285800B28CF7 /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
@@ -284,6 +296,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CC0AEAD258878A40023DCA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CCE286A2587283600B28CF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +379,7 @@
 				4CBA3897258483F70042CDDB /* Day12 */,
 				4CAD5C152585D5CD0052404C /* Day13 */,
 				4CCE286D2587283600B28CF7 /* Day14 */,
+				4CC0AEB0258878A40023DCA6 /* Day15 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -381,6 +401,7 @@
 				4CBA3898258483F70042CDDB /* Day12 */,
 				4CAD5C162585D5CD0052404C /* Day13 */,
 				4CCE286E2587283600B28CF7 /* Day14 */,
+				4CC0AEB1258878A40023DCA6 /* Day15 */,
 			);
 			path = "Advent of Code 2020";
 			sourceTree = "<group>";
@@ -455,6 +476,14 @@
 				4CBA3899258483F70042CDDB /* main.swift */,
 			);
 			path = Day12;
+			sourceTree = "<group>";
+		};
+		4CC0AEB1258878A40023DCA6 /* Day15 */ = {
+			isa = PBXGroup;
+			children = (
+				4CC0AEB2258878A40023DCA6 /* main.swift */,
+			);
+			path = Day15;
 			sourceTree = "<group>";
 		};
 		4CCE286E2587283600B28CF7 /* Day14 */ = {
@@ -666,6 +695,23 @@
 			productReference = 4CBA3897258483F70042CDDB /* Day12 */;
 			productType = "com.apple.product-type.tool";
 		};
+		4CC0AEAF258878A40023DCA6 /* Day15 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC0AEB6258878A40023DCA6 /* Build configuration list for PBXNativeTarget "Day15" */;
+			buildPhases = (
+				4CC0AEAC258878A40023DCA6 /* Sources */,
+				4CC0AEAD258878A40023DCA6 /* Frameworks */,
+				4CC0AEAE258878A40023DCA6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day15;
+			productName = Day15;
+			productReference = 4CC0AEB0258878A40023DCA6 /* Day15 */;
+			productType = "com.apple.product-type.tool";
+		};
 		4CCE286C2587283600B28CF7 /* Day14 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CCE28732587283600B28CF7 /* Build configuration list for PBXNativeTarget "Day14" */;
@@ -740,8 +786,8 @@
 		4C324287257604B800935C89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Michael Fenske";
 				TargetAttributes = {
 					4C2E85DF25816C2F00A940A5 = {
@@ -773,6 +819,9 @@
 					};
 					4CBA3896258483F70042CDDB = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					4CC0AEAF258878A40023DCA6 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 					4CCE286C2587283600B28CF7 = {
 						CreatedOnToolsVersion = 12.2;
@@ -815,6 +864,7 @@
 				4CBA3896258483F70042CDDB /* Day12 */,
 				4CAD5C142585D5CD0052404C /* Day13 */,
 				4CCE286C2587283600B28CF7 /* Day14 */,
+				4CC0AEAF258878A40023DCA6 /* Day15 */,
 			);
 		};
 /* End PBXProject section */
@@ -910,6 +960,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CC0AEAC258878A40023DCA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC0AEB3258878A40023DCA6 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4CCE28692587283600B28CF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -952,6 +1010,7 @@
 		4C2E85E425816C2F00A940A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -963,6 +1022,7 @@
 		4C2E85E525816C2F00A940A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -974,6 +1034,7 @@
 		4C3035CA257DEC01001F033A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -985,6 +1046,7 @@
 		4C3035CB257DEC01001F033A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1111,6 +1173,7 @@
 		4C3242BC2576052500935C89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1122,6 +1185,7 @@
 		4C3242BD2576052500935C89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1133,6 +1197,7 @@
 		4C34AB3A257F3F8B0042C348 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1144,6 +1209,7 @@
 		4C34AB3B257F3F8B0042C348 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1155,6 +1221,7 @@
 		4C369E48257C9AF0006CA4B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1166,6 +1233,7 @@
 		4C369E49257C9AF0006CA4B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1177,6 +1245,7 @@
 		4C66E8292578A7EB006E934A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1188,6 +1257,7 @@
 		4C66E82A2578A7EB006E934A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1199,6 +1269,7 @@
 		4C7FD233257B4911006C82AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1210,6 +1281,7 @@
 		4C7FD234257B4911006C82AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1221,6 +1293,7 @@
 		4C875FBE2577561400960915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1232,6 +1305,7 @@
 		4C875FBF2577561400960915 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1243,6 +1317,7 @@
 		4CAD5C192585D5CD0052404C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1254,6 +1329,7 @@
 		4CAD5C1A2585D5CD0052404C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1265,6 +1341,7 @@
 		4CBA389B258483F70042CDDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1274,6 +1351,29 @@
 			name = Debug;
 		};
 		4CBA389C258483F70042CDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHBZWL349Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4CC0AEB4258878A40023DCA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHBZWL349Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4CC0AEB5258878A40023DCA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1287,6 +1387,7 @@
 		4CCE28712587283600B28CF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1298,6 +1399,7 @@
 		4CCE28722587283600B28CF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1309,6 +1411,7 @@
 		4CD86C452582CBC70056921A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1320,6 +1423,7 @@
 		4CD86C462582CBC70056921A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1331,6 +1435,7 @@
 		4CDFF16F2579978E0062203C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1342,6 +1447,7 @@
 		4CDFF1702579978E0062203C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1353,6 +1459,7 @@
 		4CF7AF4025808F9500B21C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1364,6 +1471,7 @@
 		4CF7AF4125808F9500B21C44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHBZWL349Q;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1470,6 +1578,15 @@
 			buildConfigurations = (
 				4CBA389B258483F70042CDDB /* Debug */,
 				4CBA389C258483F70042CDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC0AEB6258878A40023DCA6 /* Build configuration list for PBXNativeTarget "Day15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC0AEB4258878A40023DCA6 /* Debug */,
+				4CC0AEB5258878A40023DCA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
